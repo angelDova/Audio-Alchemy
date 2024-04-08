@@ -122,11 +122,13 @@ function UpcomingWebinars() {
           </Card>
         </div>
         <div className="mt-10 text-center">
-          <Link
-            href={"/"}
-            className="rounded border border-neutral-600 bg-white px-4 py-2 text-neutral-700 transition duration-200 hover:bg-gray-100"
-          >
-            View All webinars
+          <Link href={"/"}>
+            <button className="relative p-[3px]">
+              <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500" />
+              <div className="group relative  rounded-[6px] bg-black  px-8 py-2 text-white transition duration-200 hover:bg-transparent">
+                View all webinars
+              </div>
+            </button>
           </Link>
         </div>
       </div>

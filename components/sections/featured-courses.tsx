@@ -3,6 +3,7 @@
 import courseData from "@/data/music_courses.json";
 import Link from "next/link";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
+import CoursesButton from "@/components/buttons/courses-button";
 
 interface Course {
   id: number;
@@ -37,7 +38,7 @@ function FeaturedCourses() {
             <div className="flex justify-center" key={course.id}>
               <BackgroundGradient className="flex h-full max-w-sm flex-col overflow-hidden rounded-[22px] bg-white dark:bg-zinc-900">
                 <div className="flex flex-grow flex-col items-center p-4 text-center sm:p-6">
-                  <p className="mb-2 mt-4 text-lg text-black sm:text-xl dark:text-neutral-200">
+                  <p className="mb-2 mt-4 text-lg text-black dark:text-neutral-200 sm:text-xl">
                     {course.title}
                   </p>
                   <p className="felx-grow text-sm text-neutral-600 dark:text-neutral-400">
@@ -51,12 +52,7 @@ function FeaturedCourses() {
         </div>
       </div>
       <div className="mt-20 text-center">
-        <Link
-          href={"/courses"}
-          className="rounded-lg border border-neutral-600 bg-white px-4 py-2 text-neutral-700 transition duration-200 hover:bg-gray-100"
-        >
-          View All courses
-        </Link>
+        <CoursesButton />
       </div>
     </div>
   );
