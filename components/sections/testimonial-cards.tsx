@@ -37,7 +37,7 @@ const musicSchoolTestimonials = [
 
 function MusicSchoolTestimonials() {
   return (
-    <div className="bg-grid-white/[0.02]  relative flex h-[40rem] w-full flex-col items-center justify-center overflow-hidden bg-black/[0.96] antialiased ">
+    <div className="relative  flex h-[40rem] w-full flex-col items-center justify-center overflow-hidden bg-black/[0.96] antialiased bg-grid-white/[0.02] ">
       <h2 className="z-10 mb-8 text-center text-3xl font-bold">
         Hear our Harmony: Voices of success
       </h2>

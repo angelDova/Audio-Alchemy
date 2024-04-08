@@ -1,20 +1,25 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
 import courseData from "@/data/music_courses.json";
+import { SparklesCore } from "@/components/ui/sparkles";
+import { LampComponent, LampContainer } from "@/components/ui/lamp";
 
 function CoursesPage() {
   return (
-    <div className="min-h-screen bg-black py-12 pt-36">
-      <h1 className="mb-8 text-center font-sans text-lg font-bold text-white md:text-7xl">
+    <div className="min-h-screen bg-neutral-950 py-12 pt-24">
+      {/* <h1 className="mb-8 text-center font-sans text-lg font-bold text-white md:text-7xl">
         All Courses ({courseData.courses.length})
-      </h1>
+      </h1> */}
+      <LampComponent />
+
       <div className="flex flex-wrap justify-center">
         {courseData.courses.map((course) => (
-          <CardContainer key={course.id} className="inter-var m-4">
+          <CardContainer key={course.id} className="inter-var m-4 -mt-36">
             <CardBody className="group/card relative h-auto  w-auto rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:w-[30rem]  ">
               <CardItem
                 translateZ="50"
