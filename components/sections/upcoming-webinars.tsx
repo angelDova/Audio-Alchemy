@@ -84,7 +84,7 @@ function UpcomingWebinars() {
               ]}
               dotSize={2}
             />
-            {/* Radial gradient for the cute fade */}
+            Radial gradient for the cute fade
             <div className="absolute inset-0 bg-black/50 [mask-image:radial-gradient(400px_at_center,white,transparent)] dark:bg-black/90" />
           </Card>
           <Card title="Violin" icon={<ViolinSvg />}>
@@ -110,7 +110,7 @@ function UpcomingWebinars() {
               ]}
               dotSize={2}
             />
-            {/* Radial gradient for the cute fade */}
+            Radial gradient for the cute fade
             <div className="absolute inset-0 bg-black/50 [mask-image:radial-gradient(400px_at_center,white,transparent)] dark:bg-black/90" />
           </Card>
           <Card title="Flute" icon={<FluteSvg />}>

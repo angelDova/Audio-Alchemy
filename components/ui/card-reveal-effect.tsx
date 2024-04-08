@@ -16,6 +16,7 @@ export const CanvasRevealEffect = ({
    * 0.1 - slower
    * 1.0 - faster
    */
+
   animationSpeed?: number;
   opacities?: number[];
   colors?: number[][];

@@ -1,5 +1,6 @@
 import FeaturedCourses from "@/components/sections/featured-courses";
 import Hero from "@/components/sections/hero";
+import Instructors from "@/components/sections/instructors";
 import TestimonialCards from "@/components/sections/testimonial-cards";
 import UpcomingWebinars from "@/components/sections/upcoming-webinars";
 import WhyChooseUs from "@/components/sections/why-choose-us";
@@ -7,7 +8,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-grid-white/[0.02]  bg-black/[0.96] antialiased">
+    <main className="bg-black/[0.96]  antialiased bg-grid-white/[0.02]">
       <div className="min-h-screen">
         <Hero />
         <div className="flex items-center justify-center">
@@ -18,6 +19,7 @@ export default function Home() {
       <WhyChooseUs />
       <TestimonialCards />
       <UpcomingWebinars />
+      <Instructors />
     </main>
   );
 }
