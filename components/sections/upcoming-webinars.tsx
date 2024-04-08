@@ -6,7 +6,8 @@ import { CanvasRevealEffect } from "@/components/ui/card-reveal-effect";
 import { AnimatePresence, motion } from "framer-motion";
 import { DrumIcon, GuitarIcon, PianoIcon } from "lucide-react";
 import ViolinSvg from "@/components/icons/violin-svg";
-import CelloSvg from "../icons/cello-svg";
+import CelloSvg from "@/components/icons/cello-svg";
+import FluteSvg from "@/components/icons/flute-svg";
 
 const featuredWebinars = [
   {
@@ -112,7 +113,7 @@ function UpcomingWebinars() {
             {/* Radial gradient for the cute fade */}
             <div className="absolute inset-0 bg-black/50 [mask-image:radial-gradient(400px_at_center,white,transparent)] dark:bg-black/90" />
           </Card>
-          <Card title="Flute" icon={<AceternityIcon />}>
+          <Card title="Flute" icon={<FluteSvg />}>
             <CanvasRevealEffect
               animationSpeed={3}
               containerClassName="bg-sky-600"
